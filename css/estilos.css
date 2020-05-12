@@ -1,0 +1,35 @@
+body {
+    background-image: url('https://www.hypeness.com.br/wp-content/uploads/2018/12/imagens-surreais.jpg');
+    background-size: auto 210vh;
+    font-family: courier;
+    height: 100vh
+}
+  
+.menu {
+    background-color: white;
+}
+  
+.menu li {
+    list-style: none;
+}
+  
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+  
+a {
+    color: black;
+    text-decoration: none;
+}
+  
+.site-title,
+ .site-subtitle {
+    text-align: center;
+    color: Sienna;
+}
+  
+.site-title {
+    font-style: italic;
+}
+  
