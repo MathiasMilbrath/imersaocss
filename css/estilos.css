@@ -1,5 +1,6 @@
 body {
     background-image: url('https://www.hypeness.com.br/wp-content/uploads/2018/12/imagens-surreais.jpg');
+    backdrop-filter: blur(3px);
     background-size: auto 210vh;
     font-family: courier;
     height: 100vh
