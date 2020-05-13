@@ -1,0 +1,74 @@
+/* reset do css bordas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* backdrop-filter: blur(3px);-adicionar brush*/
+body {
+    background-image: url('../img/fundo\ 2.jpg');
+    background-size: auto 290vh;
+    font-family: fantasy;
+    font-size: 15px;
+    height: 100vh
+    
+}
+ 
+@media (min-width: 400px) {
+    body {
+        font-size: 20px;
+        font-family: courier;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+  
+.menu li {
+    list-style: none;
+}
+  
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    display: block;
+    padding: 1px 20px;
+}
+  
+a {
+    color: black;
+    text-decoration: none;
+}
+  
+.site-title,
+ .site-subtitle {
+    text-align: center;
+    color: Sienna;
+}
+.site-title {
+    font-size: 4em;
+}
+
+.site-title {
+    font-style: italic;
+}
+ 
+.img-portfolio {
+    width: 180px;
+    height: 180px;
+    justify-content: center;
+}
