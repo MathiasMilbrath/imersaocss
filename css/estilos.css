@@ -8,17 +8,29 @@
 /* backdrop-filter: blur(3px);-adicionar brush*/
 body {
     background-image: url('../img/fundo\ 2.jpg');
-    background-size: auto 290vh;
+    background-size: 70vh 290vh;
     font-family: 'Courgette', cursive;
     height: 100vh;
     font-size: 10px;
 }
- 
-@media (min-width: 500px) {
+
+@media (min-width: 450px) {
     body {
-        font-size: 20px;
+        background-image: url('../img/fundo\ 2.jpg');
+        background-size: 100vh 290vh;
         font-family: 'Courgette', cursive;
-        
+        height: 100vh;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        background-image: url('../img/fundo\ 2.jpg');
+        background-size: 120vh 290vh;
+        font-family: 'Courgette', cursive;
+        height: 100vh;
+        font-size: 10px;
     }
 }
 
@@ -84,14 +96,7 @@ a {
     width: 60px;
     height: 60px;
     border-radius: 30%;
-}
-
-@media (min-widht: 500px) {
-    .img-portfolio {
-        width: 180px;
-        height: 180px;
-    }
-}    
+}   
 
 .redes {
     padding: 2em;
@@ -105,19 +110,30 @@ a {
 .redes .grid {
     display: grid;
     gap: 1em;
-    grid-template-columns: repeat(3, 180px);
+    grid-template-columns: repeat(3, 100px);
     justify-content: center;
     align-content: center;
     height: 50vh;
 }
 
-@media (min-widht: 500px) {
-    .redes .grid {   
-    display: grid;
-    gap: 2em;
-    grid-template-columns: repeat(3, 180px);
-    justify-content: center;
-    align-content: center;
-    height: 50vh;
+@media (min-width: 800px) {
+    .redes .grid {
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(3, 280px);
+        justify-content: center;
+        align-content: center;
+        height: 50vh;
+    }
+}
+
+@media (min-width: 450px) {
+    .redes .grid {
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(3, 145px);
+        justify-content: center;
+        align-content: center;
+        height: 50vh;
     }
 }
