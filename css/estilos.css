@@ -9,16 +9,16 @@
 body {
     background-image: url('../img/fundo\ 2.jpg');
     background-size: auto 290vh;
-    font-family: fantasy;
-    font-size: 15px;
-    height: 100vh
-    
+    font-family: 'Courgette', cursive;
+    height: 100vh;
+    font-size: 10px;
 }
  
-@media (min-width: 400px) {
+@media (min-width: 500px) {
     body {
         font-size: 20px;
-        font-family: courier;
+        font-family: 'Courgette', cursive;
+        
     }
 }
 
@@ -27,7 +27,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
 .menu {
     background-color: white;
     position: fixed;
@@ -57,18 +59,65 @@ a {
 .site-title,
  .site-subtitle {
     text-align: center;
-    color: Sienna;
+    color: gray;
 }
 .site-title {
     font-size: 4em;
+    font-family: 'Press Start 2P', cursive;
+    font-style: italic;
 }
 
-.site-title {
+.site-subtitle {
+    font-family: 'Press Start 2P', cursive;
     font-style: italic;
 }
  
+.redes h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: gray;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    text-align: center;
+}
+
 .img-portfolio {
-    width: 180px;
-    height: 180px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+}
+
+@media (min-widht: 500px) {
+    .img-portfolio {
+        width: 180px;
+        height: 180px;
+    }
+}    
+
+.redes {
+    padding: 2em;
+    height: 100vh;
+}
+
+.redes figure {
+    text-align: center;
+}
+ 
+.redes .grid {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 180px);
     justify-content: center;
+    align-content: center;
+    height: 50vh;
+}
+
+@media (min-widht: 500px) {
+    .redes .grid {   
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(3, 180px);
+    justify-content: center;
+    align-content: center;
+    height: 50vh;
+    }
 }
