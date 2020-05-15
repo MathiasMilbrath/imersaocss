@@ -30,7 +30,7 @@ body {
         background-size: 120vh 290vh;
         font-family: 'Courgette', cursive;
         height: 100vh;
-        font-size: 10px;
+        font-size: 20px;
     }
 }
 
@@ -42,11 +42,32 @@ header {
     
 }
 
+.titulo {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+
+    animation: linear 2s animacaotitulo forwards;
+}
+
+@keyframes animacaotitulo {
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
 .menu {
-    background-color: white;
+    background-color:grey;
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 1;
+}
+
+.menu:active,
+.menu a:hover {
+    background-color: black;
+    color: white 
 }
   
 .menu li {
@@ -60,7 +81,8 @@ header {
 
 .menu a {
     display: block;
-    padding: 1px 20px;
+    padding: 4px 20px;
+    transition: background-color 500ms , color 500ms;
 }
   
 a {
@@ -84,6 +106,7 @@ a {
     font-style: italic;
 }
  
+.contato h2,
 .redes h2 {
     font-family: 'Press Start 2P', cursive;
     color: gray;
@@ -95,12 +118,18 @@ a {
 .img-portfolio {
     width: 60px;
     height: 60px;
-    border-radius: 30%;
-}   
+    border-radius: 40%;
+}
 
+.img-portfolio:hover {
+    transform: scale(2);
+    transition: transform 500ms;
+}
+
+.contato,
 .redes {
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .redes figure {
@@ -136,4 +165,18 @@ a {
         align-content: center;
         height: 50vh;
     }
+}
+
+.contato a {
+    color: gray;
+    font-size: 6em;
+}
+
+.contato .icons {
+    text-align: center;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-shadow: 5px 5px 3px #333333;
 }
