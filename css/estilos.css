@@ -93,7 +93,7 @@ a {
 .site-title,
  .site-subtitle {
     text-align: center;
-    color: gray;
+    color: black;
 }
 .site-title {
     font-size: 4em;
@@ -106,30 +106,92 @@ a {
     font-style: italic;
 }
  
+.sobre h2,
 .contato h2,
 .redes h2 {
     font-family: 'Press Start 2P', cursive;
-    color: gray;
+    color: black;
     margin-bottom: 1.5em;
     font-size: 2em;
     text-align: center;
 }
 
-.img-portfolio {
-    width: 60px;
-    height: 60px;
-    border-radius: 40%;
+.sobre a {
+    color: peru;
 }
 
-.img-portfolio:hover {
+.sobre p {
+    color: black;
+    margin-bottom: 1.4em;
+    text-indent: 3em;
+}
+
+.sobre .avatar {
+    float: left;
+    margin-right: 2em;
+}
+
+.sobre .avatar img {
+    border-radius: 50%;
+}
+
+.img-portfolio {
+    width: 140px;
+    height: 180px;
+    /*! border-radius: 40%; */
+}
+
+/*.img-portfolio:hover {
     transform: scale(2);
     transition: transform 500ms;
+}*/
+
+.flip-card {
+    perspective: 550px;
 }
 
+.card {
+    position: relative;
+    width: 142px;
+    height: 180px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.flip-card:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-frente,
+.card-verso {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-verso {
+    background-color: white;
+    height: 180px;
+    width: 142px;
+    transform: rotateY(180deg);
+}
+
+.sobre,
 .contato,
 .redes {
     padding: 2em;
     min-height: 100vh;
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;   
+    }
+}
 }
 
 .redes figure {

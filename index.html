@@ -14,7 +14,7 @@
 
 <body>
   <header>
-    <nav class="menu">
+    <nav class="menu container">
       <ul>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#redes">Redes Sociais</a></li>
@@ -26,25 +26,68 @@
      <h2 class="site-subtitle">Cursante de Ensino Médio</h2>
     </div>
   </header>
-  <section class="redes" id="redes">
+  <section class="sobre container" id="sobre">
+    <h2>Sobre</h2>
+   
+    
+      <figure class="avatar">
+        <img src="https://pbs.twimg.com/profile_images/1190470958991233025/ln0v4JRr_400x400.jpg" alt="Mathias Milbrath">
+      </figure>
+  
+    
+    
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus doloribus doloremque quo eos laborum alias amet adipisci, vitae cum omnis iste, molestias odit et culpa provident ut sunt aliquam praesentium!
+    </p>
+
+    <p>
+      Veniam eligendi quod omnis repudiandae culpa optio molestiae exercitationem, eum, rerum ipsum, id voluptas non? Quam eius repudiandae consectetur libero inventore, beatae placeat perferendis ducimus eveniet corrupti voluptatem provident. Quod!
+    </p>
+
+    <p>
+      Tempora neque vitae exercitationem, dolore incidunt pariatur, veritatis aliquid cupiditate, voluptatibus porro illum fugit adipisci quisquam eveniet cumque delectus dolorum obcaecati. Illo voluptas consequuntur, repudiandae magni recusandae accusamus accusantium officia!
+    </p>
+
+    <p>
+      Esse site foi feito durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> ;)
+    </p>
+  </section>
+  <section class="redes container" id="redes">
     <h2>Redes Sociais</h2>
       
     <div class="grid">
-        <figure>
+      <div class="card">
+        <figure class="card-frente">
           <img class="img-portfolio" src="./img/instagram-icone-novo_1057-2227.jpg" alt="Instagram">
           <figcaption><a href="https://www.instagram.com/mathiasmilbrath/">Instagram</a></figcaption>
         </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/download.png" alt=">Facebook">
-          <figcaption><a href="https://www.facebook.com/mathias.milbrath/">Facebook</a></figcaption>
-        </figure>
+        <div class="card-verso">
+          @mathiasmilbrath
+        </div>
+      </div>  
+     
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-frente">
+            <img class="img-portfolio" src="./img/download.png" alt=">Facebook">
+            <figcaption><a href="https://www.facebook.com/mathias.milbrath/">Facebook</a></figcaption>
+          </figure>
+          <div class="card-verso">
+            Mathias Milbrath
+          </div>
+        </div>
+      </div>
+      
+        
+
         <figure>
           <img class="img-portfolio" src="./img/b1a3fab214230557053ed1c4bf17b46c-logotipo-do---cone-do-twitter-by-vexels.png" alt="Twitter">
           <figcaption><a href="https://twitter.com/MathiasMilbrat1">Twitter</a></figcaption>   
         </figure>
+
     </div>
   </section>
-    <section class="contato" id="contato">
+    <section class="contato container" id="contato">
       <h2>Contato</h2>
         <div class="grid icons">
           <a target="_blank" href="https://github.com/MathiasMilbrath/">
